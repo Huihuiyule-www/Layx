@@ -16,7 +16,7 @@
             padding: 0;
             line-height: 1.5;
         }
-        
+
         body {
             display: -webkit-flex;
             display: flex;
@@ -31,7 +31,7 @@
             -moz-justify-content: center;
             -o-justify-content: center;
         }
-        
+
         label {
             font-size: 90px;
             font-family: Arial, Helvetica, sans-serif;
@@ -42,12 +42,12 @@
 </head>
 
 <body>
-    <label>Layx</label>
+    <button onclick="javascript: top.layx.iframe('top_baidu', '百度一下', 'https://www.baidu.com', {
+        width: 500, height: 500
+    }); ">
+        在顶级页面打开新窗口
+    </button>
     <script type="text/javascript">
-        function iframeFunc() {
-            alert("我是iframe.html 页面的 iframeFunc 方法");
-        }
     </script>
 </body>
-
 </html>
